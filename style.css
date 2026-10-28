@@ -1,0 +1,109 @@
+
+
+
+/* General page style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+}
+
+/* Full-screen blue background */
+.badminton-page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 5%;
+    background: linear-gradient(135deg, #243b8a, #5278d9, #8bb8f0);
+}
+
+/* Main title */
+h1 {
+    background-color: white;
+    color: #243b8a;
+    text-align: center;
+    font-size: 32px;
+    padding: 22px;
+    border-radius: 10px;
+    margin: 0 0 60px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Columns spacing */
+.cards {
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+/* White information cards */
+.guide-card {
+    background-color: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 220px;
+    height: 100%;
+    border-bottom: 5px solid #f4d35e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Yellow card headings */
+.guide-card h2 {
+    background-color: #f4e65a;
+    color: #243b8a;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+/* List content */
+.guide-card ul {
+    padding-left: 22px;
+    margin-bottom: 0;
+    line-height: 2;
+    font-size: 15px;
+}
+
+/* Bottom text */
+.footer-text {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Mobile screen layout */
+@media (max-width: 767px) {
+    .badminton-page {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 18px;
+        margin-bottom: 35px;
+    }
+
+    .guide-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .guide-card h2 {
+        font-size: 18px;
+    }
+
+    .guide-card ul {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        margin-top: 35px;
+    }
+}
